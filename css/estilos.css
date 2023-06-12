@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 130%;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden
+}
+
+header {
+    height: 90px; 
+    width: 100%;
+    background-color: #70534E;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+}
+
+nav {
+    position: relative;
+
+}
+
+nav img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 15px;
+    margin-right: 10px;
+}
+
+nav ul {
+    position: relative;
+    left: 13%;
+    top: 30px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #70534E;
+    font-weight: bold;
+    background-color: #F5F749;
+    border-radius: 5%;
+    padding: 5px 8px;
+    margin: 0px 8px;
+}
+
+header nav ul a:hover {
+    background-color: #F7F7F2;
+}
+
+.divmain {
+    position: relative;
+    margin: 0 0 100px 0;
+}
+
+main {
+    display: inline-block;
+    background-color: #997E65;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 18%;
+    z-index: 200;
+}
+
+h1 {
+    color: #F5F749;
+    font-size: 55px;
+    padding: 5px 55px; 
+    text-align: center;
+}
+
+.fondo {
+    background-image: url(../files/mudanza1.jpg); 
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+section article h3 {
+    color: black;
+    font-size: 100px;
+    margin:50px 50px;
+}
+
+section article ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 0 60px;
+}
+
+section article ul li {
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+footer {
+    background-color: #70534E;
+    height: auto;
+}
+
+.divfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: oblique;
+    color: white;
+    padding-top: 12px;
+    font-size: 15px;
+}
+
+/*ALQUILER*/
+
+#subtituloa {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #C6B38E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#subtituloa h2 {
+    color: white;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+} 
+
+.diva {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.imga {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.imga img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.carda {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #C6B38E;
+    color: #fff;
+}
+
+.carda img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cardcontenta {
+    padding: 20px;
+}
+
+.cardcontenta h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cardcontenta p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.cardcontenta a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cardcontenta a:hover {
+    background-color: burlywood;
+}
+
+/*VENTA*/
+
+#subtitulov {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #C6B38E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#subtitulov h2 {
+    color: white;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+} 
+
+.divv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.imgv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.imgv img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.cardv {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #C6B38E;
+    color: #fff;
+}
+
+.cardv img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cardcontentv {
+    padding: 20px;
+}
+
+.cardcontentv h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cardcontentv p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.cardcontentv a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cardcontentv a:hover {
+    background-color: burlywood;
+}
+
+/*REDES*/
+
+#subtitulor {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    background-color: #C6B38E;
+}
+
+#subtitulor h2 {
+    color: white;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+} 
+
+.bodyr {
+    background-color: #9A9B73;
+}
+
+.divr {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin: 50px 0;
+}
+
+
+.ar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #C6B38E;
+    color: #fff;
+}
+
+.redesSociales img {
+    height: 60px;
+    margin-top: 15px;
+}
+
+.facebook {
+    margin-left: 15px;
+}
+
+.tiktok {
+    margin-left: 19px;
+}
+
+.insta {
+    margin-left: 19px;
+}
+
+.youtube {
+    margin-left: 11px;
+}
+
+.ar:hover {
+    background-color: #F5F749;
+    transition: 0.3s;
+
+}
+
+
+
+
