@@ -1,0 +1,366 @@
+@import "utilidades";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 130%;
+    background-color: white;
+    height: 100%;
+    width: 100%;    
+    overflow-x: hidden
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 90px; 
+    width: 100%;
+    background-color: #70534E;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    nav {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 1000px;
+            margin-left: 100px;
+            .active {
+                background-color: #F7F7F2;
+            }
+            a {
+                color: #70534E;
+                font-weight: bold;
+                background-color: #F5F749;
+                border-radius: 2px;
+                padding: 5px 8px;
+                margin: 0px 8px;
+                &:hover {
+                    background-color: #F7F7F2;
+                }
+            }
+        }
+    }
+}
+
+.divmain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #997E65;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 200;
+    h1 {
+        color: #F5F749;
+        font-size: 55px;
+        padding: 5px 55px; 
+    }
+}
+
+.fondoMain {
+    background-image: url(../files/mudanza1.jpg); 
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    opacity: 0.8;
+    article {
+        h3 {
+            color: black;
+            font-size: 100px;
+            margin:50px 50px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0 0 0 60px;
+            li {
+                padding-left: 25px;
+                margin-bottom: 10px;
+                @include boldermort
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #70534E;
+    height: auto;
+    .divfooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-style: oblique;
+        color: white;
+        padding-top: 12px;
+        font-size: 15px;
+    }
+}
+
+/*ALQUILER*/
+
+.subtituloa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C6B38E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    } 
+}
+
+.seca {
+    .articlea {
+        .diva {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .imga {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #e0e0e0;
+                padding: 20px;
+                .carda {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    background-color: #C6B38E;
+                    color: #fff;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    .cardcontenta {
+                        padding: 20px;
+                        h3 {
+                            font-size: 30px;
+                            margin-bottom: 10px;
+                            font-weight: bolder;
+                        }
+                        p {
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        a {
+                            display: inline-block;
+                            padding: 8px 12px;
+                            background-color: #fff;
+                            color: black;
+                            text-decoration: none;
+                            border-radius: 4px;
+                            transition: background-color 0.3s ease;
+                            &:hover {
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*VENTA*/
+
+.subtitulov {
+    @extend .subtituloa
+}
+
+.secv {
+    .articlev {
+        .divv {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .imgv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #e0e0e0;
+                padding: 20px;
+                .cardv {
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    background-color: #C6B38E;
+                    color: #fff;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    .cardcontentv {
+                        padding: 20px;
+                        h3 {
+                            font-size: 30px;
+                            margin-bottom: 10px;
+                            font-weight: bolder;
+                        }
+                        p {
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        a {
+                            display: inline-block;
+                            padding: 8px 12px;
+                            background-color: #fff;
+                            color: black;
+                            text-decoration: none;
+                            border-radius: 4px;
+                            transition: background-color 0.3s ease;
+                            &:hover {
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*REDES*/
+
+.bodyr {
+    background-color: #9A9B73;
+}
+
+#subtitulor {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    background-color: #C6B38E;
+    h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    } 
+}
+
+.divr {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    .redesSociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        margin: 50px 0;
+        .ar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #C6B38E;
+            color: #fff;
+            &:hover {
+                background-color: #F5F749;
+                transition: 0.3s;
+            }
+            img {
+                height: 60px;
+                margin-top: 15px;
+            }
+        }
+        .facebook {
+            margin-left: 15px;
+        }
+        .tiktok {
+            margin-left: 19px;
+        }
+        .insta {
+            margin-left: 19px;
+        }
+        .youtube {
+            margin-left: 11px;
+        }
+    }
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+    .responsiveUL {
+        margin-top: 2px;
+        ul {
+            padding-top: 5px;
+            height: auto;
+            background-color: #F5F749;
+            width: 100%;
+            padding-bottom: 3px;
+            .active {
+                background-color: #F5F749;
+            }
+        }
+    }
+    .inframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .fondoMain {
+        article {
+            h3 {
+                font-size: 60px;
+                }
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 800px;
+            }
+        }
+    }
+    .secv {
+        width: 100%;
+    }
+    .divv {
+        display: flex;
+        flex-direction: column;
+    }
+    .seca {
+        width: 100%;
+    }
+    .diva {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,9 @@
+$naranja: orange;
+$size: 100px; 
+$colorMain: black;
+
+@mixin boldermort {
+    font-weight: bolder;
+    font-size: 60px;
+    color: $colorMain;
+}
