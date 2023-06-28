@@ -193,6 +193,11 @@ footer .divfooter {
   background-color: #e0e0e0;
   padding: 20px;
 }
+.secv .articlev .divv .imgv img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
 .secv .articlev .divv .imgv .cardv {
   width: 100%;
   height: 100%;
@@ -324,17 +329,11 @@ footer .divfooter {
     justify-content: space-between;
     height: 800px;
   }
-  .secv {
-    width: 100%;
-  }
-  .divv {
+  .seca .articlea .diva {
     display: flex;
     flex-direction: column;
   }
-  .seca {
-    width: 100%;
-  }
-  .diva {
+  .secv .articlev .divv {
     display: flex;
     flex-direction: column;
   }
