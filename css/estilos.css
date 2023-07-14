@@ -1,3 +1,4 @@
+/*Para importar "_utilidades.scss"*/
 * {
   padding: 0;
   margin: 0;
@@ -60,8 +61,6 @@ main {
   flex-direction: row;
   justify-content: center;
   background-color: #997E65;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   z-index: 200;
 }
 main h1 {
@@ -71,24 +70,26 @@ main h1 {
 }
 
 .fondoMain {
-  background-image: url(../files/mudanza1.jpg);
-  position: relative;
-  height: 1000px;
+  background-image: url(../files/inmobiliariaaa.jpg);
+  height: auto;
   width: 100%;
-  opacity: 0.8;
 }
-.fondoMain article h3 {
+.fondoMain div {
+  margin-bottom: 200px;
+}
+.fondoMain div h2 {
   color: black;
   font-size: 100px;
   margin: 50px 50px;
+  letter-spacing: 4px;
 }
-.fondoMain article ul {
+.fondoMain div ul {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0 0 0 60px;
 }
-.fondoMain article ul li {
+.fondoMain div ul li {
   padding-left: 25px;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -111,34 +112,32 @@ footer .divfooter {
   font-size: 15px;
 }
 
-/*ALQUILER*/
-.subtituloa, .subtitulov {
+/*ALQUILER (la "A" al final de la clase indica que es de ALQUILER)*/
+.subtituloa, .subtituloc, .subtitulov {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #C6B38E;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
-.subtituloa h2, .subtitulov h2 {
+.subtituloa h2, .subtituloc h2, .subtitulov h2 {
   color: white;
   font-size: 60px;
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 
-.seca .articlea .diva {
+.seca .div-a .diva {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
-.seca .articlea .diva .imga {
+.seca .div-a .diva .imga {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e0e0e0;
   padding: 20px;
 }
-.seca .articlea .diva .imga .carda {
+.seca .div-a .diva .imga .carda {
   width: 100%;
   height: 100%;
   border: 1px solid #ccc;
@@ -148,26 +147,26 @@ footer .divfooter {
   background-color: #C6B38E;
   color: #fff;
 }
-.seca .articlea .diva .imga .carda img {
+.seca .div-a .diva .imga .carda img {
   width: 100%;
   height: auto;
   display: block;
 }
-.seca .articlea .diva .imga .carda .cardcontenta {
+.seca .div-a .diva .imga .carda .cardcontenta {
   padding: 20px;
 }
-.seca .articlea .diva .imga .carda .cardcontenta h3 {
+.seca .div-a .diva .imga .carda .cardcontenta h3 {
   font-size: 30px;
   margin-bottom: 10px;
   font-weight: bolder;
 }
-.seca .articlea .diva .imga .carda .cardcontenta p {
+.seca .div-a .diva .imga .carda .cardcontenta p {
   font-size: 14px;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
 }
-.seca .articlea .diva .imga .carda .cardcontenta a {
+.seca .div-a .diva .imga .carda .cardcontenta a {
   display: inline-block;
   padding: 8px 12px;
   background-color: #fff;
@@ -176,29 +175,29 @@ footer .divfooter {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-.seca .articlea .diva .imga .carda .cardcontenta a:hover {
+.seca .div-a .diva .imga .carda .cardcontenta a:hover {
   background-color: #ccc;
 }
 
-/*VENTA*/
-.secv .articlev .divv {
+/*VENTA (la "V" al final de la clase indica que es de VENTA)*/
+.secv .div-v .divv {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
-.secv .articlev .divv .imgv {
+.secv .div-v .divv .imgv {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e0e0e0;
   padding: 20px;
 }
-.secv .articlev .divv .imgv img {
+.secv .div-v .divv .imgv img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
-.secv .articlev .divv .imgv .cardv {
+.secv .div-v .divv .imgv .cardv {
   width: 100%;
   height: 100%;
   border: 1px solid #ccc;
@@ -208,26 +207,26 @@ footer .divfooter {
   background-color: #C6B38E;
   color: #fff;
 }
-.secv .articlev .divv .imgv .cardv img {
+.secv .div-v .divv .imgv .cardv img {
   width: 100%;
   height: auto;
   display: block;
 }
-.secv .articlev .divv .imgv .cardv .cardcontentv {
+.secv .div-v .divv .imgv .cardv .cardcontentv {
   padding: 20px;
 }
-.secv .articlev .divv .imgv .cardv .cardcontentv h3 {
+.secv .div-v .divv .imgv .cardv .cardcontentv h3 {
   font-size: 30px;
   margin-bottom: 10px;
   font-weight: bolder;
 }
-.secv .articlev .divv .imgv .cardv .cardcontentv p {
+.secv .div-v .divv .imgv .cardv .cardcontentv p {
   font-size: 14px;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
 }
-.secv .articlev .divv .imgv .cardv .cardcontentv a {
+.secv .div-v .divv .imgv .cardv .cardcontentv a {
   display: inline-block;
   padding: 8px 12px;
   background-color: #fff;
@@ -236,24 +235,23 @@ footer .divfooter {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-.secv .articlev .divv .imgv .cardv .cardcontentv a:hover {
+.secv .div-v .divv .imgv .cardv .cardcontentv a:hover {
   background-color: #ccc;
 }
 
-/*REDES*/
+/*REDES (la "R" al final de la clase indica que es de REDES)*/
 .bodyr {
   background-color: #9A9B73;
 }
 
-#subtitulor {
+.subtitulor {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-top: 85px;
   background-color: #C6B38E;
 }
-#subtitulor h2 {
+.subtitulor h2 {
   color: white;
   font-size: 60px;
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
@@ -300,42 +298,123 @@ footer .divfooter {
   margin-left: 11px;
 }
 
+/*CONTACTANOS (la "C" al final de la clase indica que es de CONTACTANOS)*/
+section {
+  display: flex;
+  justify-content: center;
+}
+section form {
+  margin-top: 20px;
+}
+section form button {
+  margin: 5px 60px 20px;
+}
+section form textarea {
+  resize: none;
+}
+
 /*RESPONSIVE*/
+/* LAPTOP */
+@media (max-width: 1024px) {
+  header nav .logo1 {
+    display: none;
+  }
+  header nav ul {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+/*TABLET*/
 @media (max-width: 768px) {
+  header nav .logo1 {
+    display: flex;
+  }
   .responsiveUL {
     margin-top: 2px;
+    margin-left: 50%;
   }
   .responsiveUL ul {
     padding-top: 5px;
+    padding-bottom: 3px;
     height: auto;
     background-color: #F5F749;
-    width: 100%;
-    padding-bottom: 3px;
+    width: auto;
   }
   .responsiveUL ul .active {
     background-color: #F5F749;
   }
-  .inframe {
-    width: 100%;
+  .fondoMain {
+    background-position: center;
+  }
+  .fondoMain div h2 {
+    font-size: 70px;
+    margin-left: 5px;
+  }
+  .fondoMain div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 800px;
+    margin: 15px 0 0 15px;
+  }
+  .fondoMain div ul li {
+    font-size: 40px;
+    margin: 0;
   }
 }
+/*CELULAR*/
 @media (max-width: 425px) {
-  .fondoMain article h3 {
+  .responsiveUL {
+    margin-left: 30px;
+  }
+  .fondoMain div h2 {
     font-size: 60px;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 80px;
   }
-  .fondoMain article ul {
+  .fondoMain div ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 800px;
+    justify-content: stretch;
+    margin: 15px 0 0 15px;
   }
-  .seca .articlea .diva {
+  .fondoMain div ul li {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .seca .div-a .diva {
     display: flex;
     flex-direction: column;
   }
-  .secv .articlev .divv {
+  .secv .div-v .divv {
     display: flex;
     flex-direction: column;
+  }
+  section .divr {
+    width: 100%;
+    padding: 0.5px;
+  }
+}
+/* MAX 375 */
+@media (max-width: 375px) {
+  .responsiveUL ul {
+    font-size: 15px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  .fondoMain div h2 {
+    font-size: 40px;
+  }
+  .fondoMain div ul li {
+    font-size: 20px;
+  }
+  .subtituloa h2, .subtitulov h2, .subtituloc h2 {
+    font-size: 40px;
+  }
+  .subtitulov h2 {
+    font-size: 40px;
   }
 }
 
